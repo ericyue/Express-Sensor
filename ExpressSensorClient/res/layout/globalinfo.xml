@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/blue" >
+ 
+<LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical" android:id="@+id/linearLayout1" android:fitsSystemWindows="true">
+    <ImageView android:layout_height="wrap_content" android:id="@+id/imageView1" android:src="@drawable/block" android:layout_width="wrap_content"></ImageView>
+    	<TableRow android:id="@+id/tableRow21" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    	     
+    	     
+    	     
+    	</TableRow>
+    	<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+    		<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView5" android:src="@drawable/block"></ImageView>
+    		<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView25" android:src="@drawable/laterefresh"></ImageView>
+                         <TextView android:text="Loading..." android:textColor="@drawable/white" android:id="@+id/lastUpdate" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                         
+         </TableRow>  
+          <TableRow android:id="@+id/tabRow513" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    	<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imagew5" android:src="@drawable/block"></ImageView>
+    	<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView26" android:src="@drawable/autorefresh"></ImageView>
+    	
+    	<ToggleButton android:text="autoRefresh" android:width="133sp" android:layout_height="wrap_content" android:id="@+id/autoRefresh" android:layout_width="wrap_content"></ToggleButton>
+    	                     	     
+    	
+    	</TableRow>  
+    	 <TableRow android:id="@+id/tableRow513" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    	
+    	    	     <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/whiteLine"  android:src="@drawable/whiteline"></ImageView>
+    	
+    	
+    	</TableRow> 
+    	 <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    	     <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView9" android:src="@drawable/block"></ImageView>
+    	     <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView8" android:src="@drawable/curuser"></ImageView>
+    	     <TextView android:text="Loading..." android:id="@+id/curUser" android:textColor="@drawable/white" android:textSize="19sp" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    	
+    	</TableRow>
+    	
+        <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView4" android:src="@drawable/block"></ImageView>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/gpsIcon" android:src="@drawable/gps"></ImageView>             	
+        	<TextView android:text="Loading..."  android:textSize="19sp" android:id="@+id/curPosition" android:textColor="@drawable/white"></TextView>
+        	<Button  android:layout_height="34sp" android:layout_width="wrap_content" android:id="@+id/findMeInMaps" android:text="Maps"></Button>
+        </TableRow>
+        
+        <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView3" android:src="@drawable/block"></ImageView>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView7" android:src="@drawable/resposition"></ImageView>
+ 		    <TextView android:text="Loading..."  android:textSize="18sp" android:id="@+id/curResPosition" android:textColor="@drawable/white" ></TextView>
+    	</TableRow>
+        <TableRow android:id="@+id/tableRow425" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    		<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView2" android:src="@drawable/block"></ImageView>
+ 		   
+    	</TableRow>
+        
+        <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/tableRow6">
+            <ImageView android:src="@drawable/greyline" android:layout_width="wrap_content" android:id="@+id/imageView10" android:layout_height="wrap_content"></ImageView>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow17" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:src="@drawable/block" android:layout_width="wrap_content" android:id="@+id/imageView12" android:layout_height="wrap_content"></ImageView>
+            <ImageView android:src="@drawable/todaysend" android:layout_width="wrap_content" android:id="@+id/imageView11" android:layout_height="wrap_content"></ImageView>
+            <TextView android:text="Loading..." android:id="@+id/todaySend" android:textColor="@drawable/white" android:textSize="19sp" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+        </TableRow>
+    	 <TableRow android:id="@+id/tableRow37" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    	     <ImageView android:src="@drawable/block" android:layout_width="wrap_content" android:id="@+id/imageView13" android:layout_height="wrap_content"></ImageView>
+    	     <ImageView android:src="@drawable/todayleft" android:layout_width="wrap_content" android:id="@+id/imageView14" android:layout_height="wrap_content"></ImageView>
+    	     <TextView android:text="Loading..." android:id="@+id/todayLeft" android:textColor="@drawable/white" android:textSize="19sp" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    	 </TableRow>
+    	
+    	 <TableRow android:id="@+id/tableRow57" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    	     <ImageView android:src="@drawable/block" android:layout_width="wrap_content" android:id="@+id/imageView16" android:layout_height="wrap_content"></ImageView>
+    	 <ImageView android:src="@drawable/todaymoney" android:layout_width="wrap_content" android:id="@+id/imageView17" android:layout_height="wrap_content"></ImageView>
+    	 <TextView android:text="Loading..." android:id="@+id/todayCash" android:textColor="@drawable/white" android:textSize="19sp" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    	 </TableRow>
+    	  <TableRow android:id="@+id/tableRow47" android:layout_width="wrap_content" android:layout_height="wrap_content">   	     
+    	     <ImageView android:src="@drawable/greyline" android:layout_width="wrap_content" android:id="@+id/imageView15" android:layout_height="wrap_content"></ImageView>
+    	 </TableRow>
+    	 
+    	 <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/tableRow554">
+    	     <ImageView android:src="@drawable/block" android:layout_width="wrap_content" android:id="@+id/imageView20" android:layout_height="wrap_content"></ImageView>
+    	     <ImageView android:src="@drawable/nextuser" android:layout_width="wrap_content" android:id="@+id/imageView21" android:layout_height="wrap_content"></ImageView>
+    	 <TextView android:text="Loading..." android:id="@+id/nextUser" android:textColor="@drawable/white" android:textSize="19sp" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    	 </TableRow>
+    	
+    	 <TableRow android:id="@+id/tableRow77" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    	     <ImageView android:src="@drawable/block" android:layout_width="wrap_content" android:id="@+id/imageView18" android:layout_height="wrap_content"></ImageView>
+    	     <ImageView android:src="@drawable/nextorder" android:layout_width="wrap_content" android:id="@+id/imageView19" android:layout_height="wrap_content"></ImageView>
+    	 <TextView android:text="Loading..." android:id="@+id/nextAddress" android:textColor="@drawable/white" android:textSize="19sp" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    	 </TableRow>
+    	
+    	
+    	<TableRow android:id="@+id/tableRow53" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    		<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView6" android:src="@drawable/block"></ImageView>    		
+    		<ImageView android:layout_height="wrap_content" android:src="@drawable/nextpay" android:id="@+id/imageView22" android:layout_width="wrap_content"></ImageView>
+    		<TextView android:text="Loading..." android:id="@+id/nextCash" android:textColor="@drawable/white" android:textSize="19sp" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    		
+    	</TableRow>
+    	<TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/tableRow576">
+    	 <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/block" android:id="@+id/imageView23"></ImageView>
+    	<ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/paycash" android:id="@+id/imageView24"></ImageView>
+    	<TextView android:text="Loading..." android:id="@+id/payCashOrNot" android:textColor="@drawable/white" android:textSize="19sp" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    	<Button android:layout_width="wrap_content" android:id="@+id/detailInfo" android:text="Detail" android:layout_height="34sp"></Button>
+    	</TableRow>
+    	<TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/tableRow5333">
+    	     <ImageView android:src="@drawable/greyline" android:layout_width="wrap_content" android:id="@+id/imageVie15" android:layout_height="wrap_content"></ImageView>
+    	</TableRow>
+</LinearLayout>
+
+
+
+    
+
+   
+  			
+</FrameLayout>
+		

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+      	package="info.ericyue.es"
+      	android:versionCode="1"
+      	android:versionName="1.0">
+
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.READ_CONTACTS"/>
+  <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.FLASHLIGHT"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>  
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>   
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
+  <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+  
+  
+  <supports-screens android:xlargeScreens="true"
+                    android:largeScreens="true"
+                    android:normalScreens="true"
+                    android:smallScreens="true"
+                    android:anyDensity="true"/>
+                    
+  <uses-feature android:name="android.hardware.camera"/>
+  <uses-feature android:name="android.hardware.camera.autofocus" />
+  
+<application android:icon="@drawable/icon" 
+		     android:label="Express Sensor Client"
+             android:theme="@android:style/Theme.NoTitleBar">
+      <uses-library android:name="com.google.android.maps"/>
+      
+        <activity android:name=".activity.LoginActivity" 
+      			  android:screenOrientation="portrait"
+      			  android:label="Express Sensor Client">
+<intent-filter>
+        		    	<action android:name="android.intent.action.MAIN"/>
+       			    	<category android:name="android.intent.category.LAUNCHER"/>
+    			  </intent-filter> 
+        		           
+        </activity>
+        
+      
+        <activity android:name=".activity.ExpressSensorClient"
+               	  android:screenOrientation="portrait"   
+               	  android:label="Express Sensor">           
+               	  
+ 	       
+        </activity>
+
+
+        
+        <activity android:name=".activity.About"
+         		android:screenOrientation="portrait" 	 android:label="about">     
+        </activity>
+        
+      
+    	<activity android:name=".activity.SettingsActivity"
+          	android:screenOrientation="portrait" 		android:label="settings">
+        </activity>
+
+		
+        <activity android:name=".activity.TraceRecord"
+          	android:screenOrientation="portrait" 		android:label="tracerecord">  
+
+     
+     
+        </activity>
+ 	<activity android:name=".activity.TradeStatus"
+          	android:screenOrientation="portrait" 		android:label="tradestatus">  
+        </activity>
+ 	
+ 	<activity android:name=".activity.PersonInfo"
+          	android:screenOrientation="portrait" 		android:label="personinfo">  
+        </activity>
+ 	
+      <service android:name=".activity.LocationListenService" android:exported="true" android:process=":location" ></service>
+   
+    </application>
+</manifest>

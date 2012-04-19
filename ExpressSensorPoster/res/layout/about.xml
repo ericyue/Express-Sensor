@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="#ffffff">
+		<LinearLayout android:id="@+id/headView"
+		android:layout_width="fill_parent"  
+		android:layout_height="75dip"
+		android:background="@drawable/blue"
+		android:gravity="left|center_vertical" android:orientation="horizontal">
+			<ProgressBar
+				android:id="@+id/ProgressBar" android:layout_width="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_height="wrap_content">
+			</ProgressBar>
+			<TextView  android:ellipsize="marquee" 
+        android:focusable="true" 
+        android:marqueeRepeatLimit="marquee_forever" 
+        android:focusableInTouchMode="true" 
+        android:scrollHorizontally="true" android:gravity="left|center_vertical" 
+        android:textColor="@drawable/white" android:textSize="19sp" 
+        android:layout_width="fill_parent" android:id="@+id/infoWall" 
+        android:layout_marginLeft="5dip" android:layout_height="fill_parent" 
+        android:text="关于 Express Sensor"></TextView>
+		</LinearLayout>
+<TextView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/list_header_title"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="关于"
+	android:paddingTop="2dip"
+	android:paddingBottom="2dip"
+	android:paddingLeft="5dip"
+	style="?android:attr/listSeparatorTextViewStyle" />
+		<ListView  android:layout_width="fill_parent" android:id="@+id/aboutlist"
+		android:layout_weight="1" android:layout_height="fill_parent" />
+
+</LinearLayout>

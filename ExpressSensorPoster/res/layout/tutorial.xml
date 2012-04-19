@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_gravity="center" 
+	android:layout_width="match_parent" 
+	android:padding="15dip" 
+	android:scrollbarAlwaysDrawVerticalTrack="true" 
+	android:layout_height="wrap_content">
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="270dip" 
+		android:layout_height="match_parent" 
+		android:orientation="vertical">
+		
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:gravity="center_vertical"
+			android:paddingTop="10sp">
+ 			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:text="@string/tutorial_welcome"></TextView>
+			
+		
+		</LinearLayout>
+		
+	<CheckBox 
+			android:layout_width="wrap_content" 
+			android:id="@+id/show_tutorial"
+			android:layout_height="wrap_content" 
+			android:text="下次不再显示"
+			android:paddingBottom="10dp"></CheckBox>
+		<Button android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		android:id="@+id/closeTutorial" 
+		android:text="接受以上协议" 
+		android:layout_gravity="center"></Button>
+		</LinearLayout>
+
+	
+</ScrollView>

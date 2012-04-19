@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="gps">
+        <item>10 秒</item>
+        <item>1 分钟</item>
+        <item>5 分钟</item>
+        <item>10 分钟</item>
+        <item>60 分钟</item>
+  </string-array>
+   <string-array name="gps_value">
+        <item>10000</item>
+        <item>60000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>3600000</item>
+  </string-array>
+  
+   <string-array name="update_time">
+        <item>10 秒</item>
+        <item>1 分钟</item>
+        <item>5 分钟</item>
+        <item>10 分钟</item>
+        <item>60 分钟</item>
+  </string-array>
+   <string-array name="update_time_value">
+        <item>10000</item>
+        <item>60000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>3600000</item>
+  </string-array>
+    <string-array name="receive_item">
+        <item>手机网络</item> 
+        <item>WiFi热点</item>
+   </string-array>
+      <string-array name="receive_value">
+        <item>GSM</item>
+        <item>WIFI</item>   
+  </string-array>
+</resources>

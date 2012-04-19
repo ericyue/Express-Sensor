@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+  android:id="@+id/widget0"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/white"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+  <com.google.android.maps.MapView 
+    android:id="@+id/mapView" 
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent" 
+    android:layout_x="0px"
+    android:layout_y="0px"
+    android:enabled="true" 
+    android:clickable="true" 
+    android:apiKey="0t125K4jM6C6beJJqiYXWwCq_iF8bSHbVkp1tgw"
+  />
+</AbsoluteLayout>

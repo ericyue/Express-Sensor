@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:orientation="horizontal"
+	android:layout_height="wrap_content" android:background="@drawable/purple_entry_bg"
+	android:gravity="left|center_vertical" android:minHeight="60dip"
+	android:paddingRight="20dip" android:paddingLeft="10dip">
+	<ImageView android:id="@+id/leftHead"
+		android:layout_width="40dip" android:layout_height="40dip"
+		android:src="@drawable/arrow"></ImageView>
+	<TextView android:id="@+id/PurpleRowTextView"
+		android:layout_marginLeft="10dip" 
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_weight="1" android:textSize="20dip"
+		android:textColor="@drawable/purple_entry_color"></TextView>
+	<ImageView android:id="@+id/PurpleRowArrow"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:src="@drawable/arrow"></ImageView>
+</LinearLayout>  

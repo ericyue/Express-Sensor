@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string-array name="update_time">
+        <item>10 秒钟</item>
+        <item>1 分钟</item>
+        <item>5 分钟</item>
+        <item>10 分钟</item>
+        <item>60 分钟</item>
+  </string-array>
+   <string-array name="update_time_value">
+        <item>10000</item>
+        <item>60000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>3600000</item>
+  </string-array>
+   <string-array name="receive_item">
+        <item>手机网络</item> 
+        <item>WiFi热点</item>
+   </string-array>
+      <string-array name="receive_value">
+        <item>GSM</item>
+        <item>WIFI</item>   
+  </string-array>
+  
+     <string-array name="shake_receive">
+        <item>手动签收(摇晃签收)</item> 
+        <item>自动签收</item>
+   </string-array>
+      <string-array name="shake_receive_value">
+        <item>yes</item>
+        <item>no</item>   
+  </string-array>
+  
+  
+  
+  
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">		
+	<item android:id="@+id/settings_menu_item" android:title="设置" android:icon="@drawable/android:ic_menu_manage" />
+	<item android:id="@+id/about_menu_min" android:title="最小化" android:icon="@drawable/android:ic_menu_more" />
+		<item android:id="@+id/about_menu_item" android:title="关于" android:icon="@drawable/android:ic_menu_info_details" />
+	
+</menu>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="系统设置"
+		android:summary="Application settings">
+		<ListPreference
+                android:key="auto_update"
+                android:title="同步数据时间"
+                android:summary="更改从服务器取得数据的时间间隔"
+                android:entries="@array/update_time"
+                android:defaultValue="10000"
+                android:entryValues="@array/update_time_value"
+                />
+        <ListPreference
+                android:key="gps_record"
+                android:title="轨迹记录时间"
+                android:summary="更改上传GPS信息的时间间隔"
+                android:entries="@array/gps"
+                android:defaultValue="10000"
+                android:entryValues="@array/gps_value"
+                />                     
+		<CheckBoxPreference android:key="switch_autorefresh"
+			android:defaultValue="false" 
+			android:title="数据同步开关"
+			android:summary="打开或者关闭自动数据同步功能" />
+		<CheckBoxPreference android:key="trace_record"
+			android:defaultValue="false" 
+			android:title="轨迹跟踪"
+			android:summary="是否开启轨迹记录功能" />
+		<CheckBoxPreference android:key="wifi_receive"
+			android:defaultValue="false" 
+			android:title="WIFI精确投递开关"
+			android:summary="打开或者关闭WIFI精确投递功能" />	
+		<CheckBoxPreference android:key="show_tutorial"
+			android:defaultValue="ture" 
+			android:title="软件声明"
+			android:summary="是否程序启动时显示软件声明" />
+	</PreferenceCategory>
+
+</PreferenceScreen>

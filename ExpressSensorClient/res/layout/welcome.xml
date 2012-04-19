@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/bg" 
+  android:orientation="vertical" android:weightSum="1">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/relativeLayout1">
+        <ImageView android:src="@drawable/bottomwd" android:id="@+id/imageView3" android:layout_alignRight="@+id/imageView2" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_alignParentBottom="true" android:layout_width="wrap_content"></ImageView>
+        <ImageView android:src="@drawable/bigicon" android:id="@+id/imageView1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="22dp" android:layout_marginTop="20dp"></ImageView>
+        <ImageView android:src="@drawable/headwd" android:id="@+id/imageView2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignTop="@+id/imageView1" android:layout_toRightOf="@+id/imageView1" android:layout_marginTop="18dp"></ImageView>
+    </RelativeLayout>
+
+    
+    
+</LinearLayout>

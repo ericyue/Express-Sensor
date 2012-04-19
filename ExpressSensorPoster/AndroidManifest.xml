@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+      	package="info.ericyue.es"
+      	android:versionCode="1"
+      	android:versionName="1.0">
+
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.READ_CONTACTS"/>
+  <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+<uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+  <uses-permission android:name="android.permission.CALL_PHONE"/>
+  <uses-permission android:name="android.permission.FLASHLIGHT"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>  
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>   
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
+  <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+  	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+  
+  
+  <supports-screens android:xlargeScreens="true"
+                    android:largeScreens="true"
+                    android:normalScreens="true"
+                    android:smallScreens="true"
+                    android:anyDensity="true"/>
+                    
+  <uses-feature android:name="android.hardware.camera"/>
+  <uses-feature android:name="android.hardware.camera.autofocus" />
+  
+<application android:icon="@drawable/icon" 
+		     android:label="Express Sensor"
+             android:theme="@android:style/Theme.NoTitleBar">
+      <uses-library android:name="com.google.android.maps"/>
+      
+        <activity android:name=".activity.LoginActivity" 
+      			  android:screenOrientation="portrait"
+      			  android:label="Express Sensor">
+
+                  	  <intent-filter>
+        		    	<action android:name="android.intent.action.MAIN"/>
+       			    	<category android:name="android.intent.category.LAUNCHER"/>
+    			  </intent-filter>  		           
+        </activity>
+        
+        <activity android:name=".activity.ExpressSensor"
+               	  android:screenOrientation="portrait"   
+               	  android:label="Express Sensor">
+
+               	       
+        </activity>
+
+
+        
+        <activity android:name=".activity.About"
+         		android:screenOrientation="portrait" 	 android:label="about">     
+        </activity>
+        
+        <activity android:name=".activity.ExpressDelivery"
+          	android:screenOrientation="portrait" 		android:label="expressdelivery">
+        </activity>  			
+    	<activity android:name=".activity.SettingsActivity"
+          	android:screenOrientation="portrait" 		android:label="settings">
+        </activity>
+      
+    
+    
+        <activity android:name=".activity.WorkStatistics"
+          	android:screenOrientation="portrait" 		android:label="workstatistics">     
+          	
+       
+          	
+        </activity> 
+
+        <activity android:name=".activity.GlobalInfo"
+          	android:screenOrientation="portrait" 		android:label="globalinfo">  
+        </activity>
+        
+  		
+        <activity android:name=".activity.TraceRecord"
+          	android:screenOrientation="portrait" 		android:label="tracerecord">  
+          	
+   
+        </activity>
+ 
+ 	       <activity android:name=".activity.Detail"
+          	android:screenOrientation="portrait" 		android:label="detail">  
+        </activity>
+ 	    <activity android:name=".zxing.client.android.CaptureActivity"
+              android:screenOrientation="landscape"
+              android:configChanges="orientation|keyboardHidden"
+              android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+              android:windowSoftInputMode="stateAlwaysHidden">
+
+      			<intent-filter>
+      			  <action android:name="info.ericyue.es.zxing.client.android.SCAN"/>
+       				 <category android:name="android.intent.category.DEFAULT"/>
+     				 </intent-filter>
+      <!-- Allow web apps to launch Barcode Scanner by linking to http://zxing.appspot.com/scan. -->
+     			 <intent-filter>
+    			    <action android:name="android.intent.action.VIEW"/>
+    		    <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="http" android:host="zxing.appspot.com" android:path="/scan"/>
+		      </intent-filter>
+		      <!-- We also support a Google Product Search URL. -->
+		      <intent-filter>
+		        <action android:name="android.intent.action.VIEW"/>
+		        <category android:name="android.intent.category.DEFAULT"/>
+		        <category android:name="android.intent.category.BROWSABLE"/>
+		        <data android:scheme="http" android:host="www.google.com" android:path="/m/products/scan"/>
+		      </intent-filter>
+		      <!-- And the UK version. -->
+		      <intent-filter>
+		        <action android:name="android.intent.action.VIEW"/>
+		        <category android:name="android.intent.category.DEFAULT"/>
+		        <category android:name="android.intent.category.BROWSABLE"/>
+		        <data android:scheme="http" android:host="www.google.co.uk" android:path="/m/products/scan"/>
+		      </intent-filter>
+    </activity>
+    <activity android:name=".zxing.client.android.PreferencesActivity"
+              android:label="@string/preferences_name">
+    </activity>
+    <activity android:name=".zxing.client.android.encode.EncodeActivity">
+      <intent-filter>
+        <action android:name="info.ericyue.es.zxing.client.android.ENCODE"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <!-- This allows us to handle the Share button in Contacts. -->
+      <intent-filter>
+        <action android:name="android.intent.action.SEND"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="text/x-vcard"/>
+      </intent-filter>
+      <!-- This allows us to handle sharing any plain text . -->
+      <intent-filter> 
+        <action android:name="android.intent.action.SEND"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="text/plain"/>
+      </intent-filter>
+    </activity>
+    <activity android:name=".zxing.client.android.book.SearchBookContentsActivity"
+              android:label="@string/sbc_name"
+              android:screenOrientation="landscape"
+              android:configChanges="orientation|keyboardHidden">
+      <intent-filter>
+        <action android:name="info.ericyue.es.zxing.client.android.SEARCH_BOOK_CONTENTS"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+   <service android:name=".activity.LocationService" android:exported="true" android:process=":location" ></service>
+    <service android:name=".activity.TraceRecordService" android:exported="true" android:process=":tracerecord" ></service>
+    </application>
+</manifest>
